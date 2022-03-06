@@ -5,6 +5,7 @@ const Allocated = React.lazy(() => import('./views/tabs/allocated/Allocated'))
 const Idle = React.lazy(() => import('./views/tabs/idle/Idle'))
 const Colors = React.lazy(() => import('./views/theme/colors/Colors'))
 const Typography = React.lazy(() => import('./views/theme/typography/Typography'))
+const Test = React.lazy(() => import('./views/test/Test'))
 
 // Base
 const Accordion = React.lazy(() => import('./views/base/accordion/Accordion'))
@@ -100,6 +101,8 @@ const routes = [
   { path: '/tabs', name: 'Dashboard', component: Allocated, exact: true },
   { path: '/tabs/allocated', name: 'Allocated', component: Allocated },
   { path: '/tabs/idle', name: 'Idle', component: Idle },
+  { path: '/test', name: 'Test', component: Test, exact: true },
+  { path: '/test/Test', name: 'Test', component: Test },
 ]
 
 export default routes

@@ -22,6 +22,7 @@ const AppSidebar = () => {
 
   return (
     <CSidebar
+      className="sideBar"
       position="fixed"
       unfoldable={unfoldable}
       visible={sidebarShow}
@@ -30,7 +31,7 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
-        Logo
+        <h4>FMS</h4>
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>

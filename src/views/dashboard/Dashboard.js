@@ -56,16 +56,27 @@ const Dashboard = () => {
     <div className="summary-content">
       <>
         <Navs />
+        <div className="innerHedder">
+          <h4>Summary Of Vehicle</h4>
+        </div>
         <WidgetsDropdown />
         <CRow>
-          <CCol xs={8}>
-            <Tables />
-          </CCol>
-          <CCol xs={4}>
+          <CCol sm={6} lg={4}>
             <Charts />
           </CCol>
+          <CCol sm={6} lg={8}>
+            <BarCharts />
+          </CCol>
         </CRow>
-        <BarCharts />
+        <CCol lg={12}>
+          <div className="innerHedder">
+            <h4>Vehicle Overview</h4>
+          </div>
+          <Tables />
+        </CCol>
+        <div className="innerHedder">
+          <h4>Project vise Vehicle Allocation</h4>
+        </div>
       </>
     </div>
   )

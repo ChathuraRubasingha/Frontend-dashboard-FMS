@@ -12,6 +12,8 @@ import {
   CTableHead,
   CTableHeaderCell,
   CTableRow,
+  CPagination,
+  CPaginationItem,
 } from '@coreui/react'
 import { DocsCallout, DocsExample } from 'src/components'
 
@@ -20,10 +22,12 @@ const Tables = () => {
     <div className="table-container">
       <>
         <CCol xs={12}>
-          <CTable striped hover>
+          <CTable>
             <CTableHead>
               <CTableRow>
-                <CTableHeaderCell scope="col">Ctogory</CTableHeaderCell>
+                <CTableHeaderCell scope="col" className="Catogory TableHedder">
+                  Ctogory
+                </CTableHeaderCell>
                 <CTableHeaderCell scope="col">Registered</CTableHeaderCell>
                 <CTableHeaderCell scope="col">Allocated</CTableHeaderCell>
                 <CTableHeaderCell scope="col">Idle</CTableHeaderCell>
@@ -115,6 +119,14 @@ const Tables = () => {
                 <CTableDataCell>1</CTableDataCell>
                 <CTableDataCell>0</CTableDataCell>
               </CTableRow>
+              <CPagination className="justify-content-end" aria-label="Page navigation example">
+                <CPaginationItem disabled>Previous</CPaginationItem>
+                <CPaginationItem>1</CPaginationItem>
+                <CPaginationItem>2</CPaginationItem>
+                <CPaginationItem>3</CPaginationItem>
+                <CPaginationItem>4</CPaginationItem>
+                <CPaginationItem>Next</CPaginationItem>
+              </CPagination>
             </CTableBody>
           </CTable>
         </CCol>

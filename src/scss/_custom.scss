@@ -1,15 +1,42 @@
 .summary-content{
-    box-shadow: 5px #888888;
+  overflow: hidden;
 }
 .widgets{
-padding-top: 5px;
+padding-top: 10px;
 }
 .tab-bar{
     text-decoration: none;
     font-size: 15px;
-    background-color: #b9b9b946;
+    background-color: #fffdfdd0;
+    border-radius: 5px;
+    color: hsl(0, 0%, 37%) !important;
 }
 .table-container{
     background-color: #ffffff;
     border-radius: 2px;
 }
+.inner-bar{
+    background-color: rgb(255, 255, 255);
+    margin-top: 5px;
+    color: #000000;
+    border-radius: 10px;
+    padding: 2px;
+}
+.sidebar{
+    background-image: linear-gradient(to right, #13043dd2, #0a011fce);
+}
+.header-sticky{
+    margin-bottom: 5px !important;
+}
+.header-brand{
+    visibility: hidden;
+}
+.sidebar-nav .nav-link{
+    color: white;
+    fill: white;
+}
+.innerHedder h4{
+    color: #bebebe;
+    margin: 10px;
+}
+// npm run lint -- --fix
