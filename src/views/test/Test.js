@@ -20,7 +20,7 @@ import {
   CCardBody,
 } from '@coreui/react'
 
-const Tables = () => {
+const Test = () => {
   const [product, setProduct] = useState([])
   const [search, setSearch] = useState('')
   const getProductData = async () => {
@@ -115,4 +115,4 @@ const Tables = () => {
   )
 }
 
-export default Tables
+export default Test

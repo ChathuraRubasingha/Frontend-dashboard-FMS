@@ -22,6 +22,7 @@ const AppSidebar = () => {
 
   return (
     <CSidebar
+      className="sideBar"
       position="fixed"
       unfoldable={unfoldable}
       visible={sidebarShow}
@@ -30,7 +31,10 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
-        Logo
+        <img
+          src="C:\Users\chathura rubasingha\OneDrive\Desktop\Software Project\fms-frontend\src\assets\images\Logo\FMS-logo.jpg"
+          alt="Logo"
+        />
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>

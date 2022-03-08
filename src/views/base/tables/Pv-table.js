@@ -20,7 +20,7 @@ import {
   CCardBody,
 } from '@coreui/react'
 
-const Tables = () => {
+const Table2 = () => {
   const [product, setProduct] = useState([])
   const [search, setSearch] = useState('')
   const getProductData = async () => {
@@ -36,7 +36,7 @@ const Tables = () => {
     getProductData()
   }, [])
   return (
-    <CCard>
+    <CCard className="table2">
       <CCardBody>
         <div className="table-container">
           <>
@@ -68,13 +68,24 @@ const Tables = () => {
               <CTable>
                 <CTableHead>
                   <CTableRow>
-                    <CTableHeaderCell scope="col" className="Catogory TableHedder">
-                      Ctogory
-                    </CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Registered</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Allocated</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Idle</CTableHeaderCell>
-                    <CTableHeaderCell scope="col">Accident</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Excavetor</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Poker</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">JCB</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Bouser</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Boom Truck</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">1T Roller</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Excavetor</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Poker</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">JCB</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Bouser</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Boom Truck</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">1T Roller</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Excavetor</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Poker</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">JCB</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Bouser</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">Boom Truck</CTableHeaderCell>
+                    <CTableHeaderCell scope="col">1T Roller</CTableHeaderCell>
                   </CTableRow>
                 </CTableHead>
                 <CTableBody>
@@ -90,6 +101,19 @@ const Tables = () => {
                       return (
                         <CTableRow key={item.id}>
                           <CTableHeaderCell scope="row">{item.name}</CTableHeaderCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
+                          <CTableDataCell>{item.games_played}</CTableDataCell>
                           <CTableDataCell>{item.games_played}</CTableDataCell>
                           <CTableDataCell>{item.games_played}</CTableDataCell>
                           <CTableDataCell>{item.games_played}</CTableDataCell>
@@ -115,4 +139,4 @@ const Tables = () => {
   )
 }
 
-export default Tables
+export default Table2

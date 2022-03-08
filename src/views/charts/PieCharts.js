@@ -13,25 +13,21 @@ const PieCharts = () => {
   const random = () => Math.round(Math.random() * 100)
 
   return (
-    <CRow>
-      <CCol xs={12}>
-        <CCard className="mb-4">
-          <CCardBody>
-            <CChartDoughnut
-              data={{
-                labels: ['Allocated', 'Idle', 'Accident'],
-                datasets: [
-                  {
-                    backgroundColor: ['#41B883', '#E46651', '#DD1B16'],
-                    data: [40, 20, 10],
-                  },
-                ],
-              }}
-            />
-          </CCardBody>
-        </CCard>
-      </CCol>
-    </CRow>
+    <CCard className="mb-4">
+      <CCardBody>
+        <CChartDoughnut
+          data={{
+            labels: ['Allocated', 'Idle', 'Accident'],
+            datasets: [
+              {
+                backgroundColor: ['#41B883', '#E46651', '#DD1B16'],
+                data: [40, 20, 10],
+              },
+            ],
+          }}
+        />
+      </CCardBody>
+    </CCard>
   )
 }
 

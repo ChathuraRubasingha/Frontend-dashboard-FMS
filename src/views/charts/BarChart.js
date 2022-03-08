@@ -10,32 +10,26 @@ import {
 } from '@coreui/react-chartjs'
 
 const BarCharts = () => {
-  const random = () => Math.round(Math.random() * 100)
-
   return (
     <>
-      <CRow>
-        <CCol xs={8}>
-          <CCard className="mb-4">
-            <CCardHeader>Month vise allocation</CCardHeader>
-            <CCardBody>
-              <CChartBar
-                data={{
-                  labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
-                  datasets: [
-                    {
-                      label: 'Allocations',
-                      backgroundColor: '#f87979',
-                      data: [40, 20, 12, 39, 10, 40, 39, 80, 40],
-                    },
-                  ],
-                }}
-                labels="months"
-              />
-            </CCardBody>
-          </CCard>
-        </CCol>
-      </CRow>
+      <CCard className="mb-4">
+        <CCardBody>
+          <CChartBar
+            height={138}
+            data={{
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'aug'],
+              datasets: [
+                {
+                  label: 'Allocations',
+                  backgroundColor: '#f87979',
+                  data: [40, 20, 12, 39, 10, 40, 80, 90],
+                },
+              ],
+            }}
+            labels="months"
+          />
+        </CCardBody>
+      </CCard>
     </>
   )
 }

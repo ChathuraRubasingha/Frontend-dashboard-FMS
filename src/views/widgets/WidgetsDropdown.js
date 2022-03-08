@@ -8,16 +8,23 @@ import {
   CDropdownToggle,
   CWidgetStatsA,
   CWidgetStatsB,
+  CCard,
+  CCardBody,
 } from '@coreui/react'
 
 const WidgetsDropdown = () => {
   return (
     <div className="widgets">
+      <div className="innerHedder">
+        <h4>Summary Of Vehicle</h4>
+      </div>
       <CRow>
         <CCol sm={6} lg={3}>
           <CWidgetStatsB
             className="mb-3"
-            progress={{ color: 'success', value: 56 }}
+            color="info"
+            inverse
+            progress={{ color: 'light', value: 56 }}
             text="Total Registered Vehicle"
             title="Registerd Vehical"
             value="256"
@@ -26,7 +33,7 @@ const WidgetsDropdown = () => {
         <CCol sm={6} lg={3}>
           <CWidgetStatsB
             className="mb-3"
-            color="primary"
+            color="success"
             inverse
             progress={{ color: 'light', value: 67 }}
             text="Total allocated Vehicle"
