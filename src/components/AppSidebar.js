@@ -31,7 +31,10 @@ const AppSidebar = () => {
       }}
     >
       <CSidebarBrand className="d-none d-md-flex" to="/">
-        <h4>FMS</h4>
+        <img
+          src="C:\Users\chathura rubasingha\OneDrive\Desktop\Software Project\fms-frontend\src\assets\images\Logo\FMS-logo.jpg"
+          alt="Logo"
+        />
       </CSidebarBrand>
       <CSidebarNav>
         <SimpleBar>

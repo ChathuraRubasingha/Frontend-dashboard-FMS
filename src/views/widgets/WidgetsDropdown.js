@@ -8,11 +8,16 @@ import {
   CDropdownToggle,
   CWidgetStatsA,
   CWidgetStatsB,
+  CCard,
+  CCardBody,
 } from '@coreui/react'
 
 const WidgetsDropdown = () => {
   return (
     <div className="widgets">
+      <div className="innerHedder">
+        <h4>Summary Of Vehicle</h4>
+      </div>
       <CRow>
         <CCol sm={6} lg={3}>
           <CWidgetStatsB

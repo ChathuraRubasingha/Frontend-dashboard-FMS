@@ -44,6 +44,8 @@ import {
   cilUserFemale,
 } from '@coreui/icons'
 import Tables from '../base/tables/Tables'
+import Table2 from '../base/tables/Pv-table'
+import Carousels from '../base/carousels/Carousels'
 
 const WidgetsDropdown = lazy(() => import('../widgets/WidgetsDropdown.js'))
 const Charts = lazy(() => import('../charts/PieCharts.js'))
@@ -56,27 +58,33 @@ const Dashboard = () => {
     <div className="summary-content">
       <>
         <Navs />
-        <div className="innerHedder">
-          <h4>Summary Of Vehicle</h4>
-        </div>
-        <WidgetsDropdown />
-        <CRow>
-          <CCol sm={6} lg={4}>
-            <Charts />
-          </CCol>
-          <CCol sm={6} lg={8}>
-            <BarCharts />
-          </CCol>
-        </CRow>
-        <CCol lg={12}>
-          <div className="innerHedder">
-            <h4>Vehicle Overview</h4>
-          </div>
+        <Carousels />
+        <CCard>
+          <CCardBody>
+            <CCard>
+              <CCardBody>
+                <WidgetsDropdown />
+                <CRow>
+                  <CCol sm={4} lg={4}>
+                    <Charts />
+                  </CCol>
+                  <CCol sm={8} lg={8}>
+                    <BarCharts />
+                  </CCol>
+                </CRow>
+              </CCardBody>
+            </CCard>
+          </CCardBody>
+        </CCard>
+        <br />
+        <CCol>
           <Tables />
         </CCol>
-        <div className="innerHedder">
-          <h4>Project vise Vehicle Allocation</h4>
+        <br />
+        <div className="table2">
+          <Table2 />
         </div>
+        <br />
       </>
     </div>
   )
