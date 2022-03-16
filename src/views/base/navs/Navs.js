@@ -23,14 +23,14 @@ const Navs = () => {
           <CNav variant="tabs">
             <CNavItem>
               <CNavLink href="/dashboard" active>
-                Summary
+                Summary of Vehicles
               </CNavLink>
             </CNavItem>
             <CNavItem>
-              <CNavLink href="/tabs/allocated">Allocated</CNavLink>
+              <CNavLink href="/tabs/allocated">Allocated Vehicles</CNavLink>
             </CNavItem>
             <CNavItem>
-              <CNavLink href="/tabs/idle">Idle</CNavLink>
+              <CNavLink href="/tabs/idle">Idle Vehicles</CNavLink>
             </CNavItem>
           </CNav>
         </CCol>
